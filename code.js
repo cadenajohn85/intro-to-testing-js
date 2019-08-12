@@ -40,16 +40,6 @@ function isEven(someInput) {
 }
 
 function isVowel(someInput) {
-    // if (someInput === 'y' || someInput === 'z') {
-    //     return false;
-    // }
-    // return isNaN(someInput);
-
-    // if (someInput === 'A' || someInput === 'E') {
-    //     return true;
-    // } else {
-
-    //if (isNaN(someInput)) {
     if (typeof someInput === "string") {
         someInput = someInput.toLowerCase();
         switch (someInput) {
@@ -69,5 +59,15 @@ function isVowel(someInput) {
     } else {
         return false;
     }
+}
+
+function add (input1, input2) {
+    if (typeof input1 === "string") {
+        input1 = parseFloat(input1);
+    }
+    if (typeof input2 === "string") {
+        input2 = parseFloat(input2);
+    }
+    return input1 + input2;
 }
 

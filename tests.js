@@ -136,3 +136,27 @@ describe("isVowel", function() {
         expect(isVowel("E")).toBe(true);
     });
 });
+
+describe("add", function() {
+    it("should be a defined function", function() {
+        expect(typeof add).toBe("function");
+    });
+    it("should return a number when called", function() {
+        expect(typeof add()).toBe("number");
+    });
+    it("should return the number 5 when passed the numbers 2 and 3", function() {
+        expect(add(2, 3)).toBe(5);
+    });
+    it("should return the number 6 when passed the numbers 3 and 3", function() {
+        expect(add(3,3)).toBe(6);
+    });
+    it("should return the number 7 when passed the number 3 and 4", function() {
+        expect(add(3,4)).toBe(7);
+    });
+    it("should return the number 11 when passed the string '5' and the number 6", function() {
+        expect(add("5", 6)).toBe(11);
+    });
+    it("should return the number 12 when passed the number 6 and the string '6'", function() {
+        expect(add(6,"6")).toBe(12);
+    });
+});
