@@ -30,3 +30,12 @@ function isFive(someInput) {
     } else {
     return false;}
 }
+
+function isEven(someInput) {
+    if (someInput === false) {
+        return false;
+    } else {
+        return someInput % 2 === 0;
+    }
+}
+

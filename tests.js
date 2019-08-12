@@ -89,6 +89,23 @@ describe("isFive", function() {
     });
 });
 
-// it("should return a string when called", function() {
-//     expect(typeof sayHello()).toBe("string");
-// });
+describe("isEven", function() {
+    it("should be a defined function", function () {
+        expect(typeof isEven).toBe("function");
+    });
+    it("should return a boolean when called", function() {
+        expect(typeof isEven()).toBe("boolean");
+    });
+    it("should return false when passed the number 3", function() {
+        expect(isEven(3)).toBe(false);
+    });
+    it("should return false when passed the number 5", function() {
+        expect(isEven(5)).toBe(false);
+    });
+    it("should return false when passed the number 7", function() {
+        expect(isEven(7)).toBe(false);
+    });
+    it("should return false when passed the boolean value false", function() {
+        expect(isEven(false)).toBe(false);
+    });
+});
