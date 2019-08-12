@@ -28,3 +28,9 @@ describe('sum', function() {
         expect(sum("black", "sheep")).toBe(false);
     });
 });
+
+describe("sayHello", function() {
+    it("should be a defined function", function() {
+        expect(typeof sayHello).toBe("function");
+    });
+});
