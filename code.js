@@ -23,3 +23,10 @@ function sayHello(someInput) {
     } else
         return "Hello, " + someInput + "!";
 }
+
+function isFive(someInput) {
+    if (!isNaN(someInput)) {
+    return parseFloat(someInput) === 5;
+    } else {
+    return false;}
+}

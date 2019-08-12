@@ -70,3 +70,25 @@ describe("sayHello", function() {
         expect(sayHello("42")).toBe("Hello, World!");
     });
 });
+
+describe("isFive", function() {
+    it("should be a defined function", function () {
+        expect(typeof isFive).toBe("function");
+    });
+    it("should return a boolean when called", function() {
+        expect(typeof isFive()).toBe("boolean");
+    });
+    it("should return true when passed the number 5", function () {
+        expect(isFive(5)).toBe(true);
+    });
+    it("should return true when passed the numeric string '5'", function() {
+        expect(isFive("5")).toBe(true);
+    });
+    it("should return false when passed the string '5abc'", function() {
+        expect(isFive("5abc")).toBe(false);
+    });
+});
+
+// it("should return a string when called", function() {
+//     expect(typeof sayHello()).toBe("string");
+// });
