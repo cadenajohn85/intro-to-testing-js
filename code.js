@@ -16,5 +16,10 @@ function sum(a, b) {
 }
 
 function sayHello(someInput) {
-    return "Hello, " + someInput + "!";
+    if (typeof someInput !== "string") {
+        return "Hello, World!";
+    } else if (!isNaN(someInput)) {
+        return "Hello, World!";
+    } else
+        return "Hello, " + someInput + "!";
 }

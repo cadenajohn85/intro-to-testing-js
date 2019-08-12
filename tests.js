@@ -48,4 +48,25 @@ describe("sayHello", function() {
     it("should return the string 'Hello, David!' when passed the string 'David'", function () {
         expect(sayHello('David')).toBe('Hello, David!');
     });
+    it("should return the string 'Hello, World!' when not passed an input", function () {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it("should return the string 'Hello, World!' when passed the boolean value true", function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it("should return the string 'Hello, World!' when passed the boolean value false", function () {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+    it("should return the string 'Hello, World!' when passed the value null", function () {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+    it("should return the string 'Hello, World!' when passed an empty string", function () {
+        expect(sayHello("")).toBe("Hello, World!");
+    });
+    it("should return the string 'Hello, World!' when passed the numeric string '5'", function () {
+        expect(sayHello("5")).toBe("Hello, World!");
+    });
+    it("should return the string 'Hello, World!' when passed the numeric string '42'", function () {
+        expect(sayHello("42")).toBe("Hello, World!");
+    });
 });
