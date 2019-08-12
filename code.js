@@ -15,6 +15,6 @@ function sum(a, b) {
     }
 }
 
-function sayHello() {
-    return "";
+function sayHello(someInput) {
+    return "Hello, " + someInput + "!";
 }
