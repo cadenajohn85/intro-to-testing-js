@@ -39,3 +39,35 @@ function isEven(someInput) {
     }
 }
 
+function isVowel(someInput) {
+    // if (someInput === 'y' || someInput === 'z') {
+    //     return false;
+    // }
+    // return isNaN(someInput);
+
+    // if (someInput === 'A' || someInput === 'E') {
+    //     return true;
+    // } else {
+
+    //if (isNaN(someInput)) {
+    if (typeof someInput === "string") {
+        someInput = someInput.toLowerCase();
+        switch (someInput) {
+            case 'a' :
+                return true;
+            case 'e' :
+                return true;
+            case 'i' :
+                return true;
+            case 'o' :
+                return true;
+            case 'u' :
+                return true;
+            default :
+                return false;
+        }
+    } else {
+        return false;
+    }
+}
+
